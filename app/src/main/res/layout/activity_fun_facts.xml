@@ -8,28 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.coetzee.kobus.funfacts.FunFactsActivity">
-
-    <TextView
-        android:text="Ants stretch when they wake up in the morning."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="13dp"
-        android:layout_marginStart="13dp"
-        android:id="@+id/textView2"
-        android:textSize="24sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Did you know?"
-        android:layout_marginTop="79dp"
-        android:textSize="24sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    tools:context="com.coetzee.kobus.funfacts.FunFactsActivity"
+    android:background="#51b46d">
 
     <Button
         android:text="Show Another Fun Fact"
@@ -38,5 +18,26 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="11dp"
-        android:id="@+id/button" />
+        android:id="@+id/showFactButton"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Did you know?"
+        android:layout_marginTop="22dp"
+        android:textSize="24sp"
+        android:textColor="@color/whiteOpacity"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:text="Ants stretch when they wake up in the morning."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/factTextView"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
