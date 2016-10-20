@@ -14,6 +14,7 @@ import java.util.Random;
 public class FunFactsActivity extends AppCompatActivity {
 
     private FactBook mFactBook = new FactBook();
+    private ColorWheel mColorWheel = new ColorWheel();
 
     // Declare our view variables
     private TextView mFactTextView;
@@ -35,8 +36,10 @@ public class FunFactsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String fact = mFactBook.getFact();
+                int color = mColorWheel.getColor();
+
                 mFactTextView.setText(fact);
-                mRelativeLayout.setBackgroundColor(Color.RED);
+                mRelativeLayout.setBackgroundColor(color);
             }
         };
 
